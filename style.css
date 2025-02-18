@@ -1,0 +1,406 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #b8621b;
+  --black-color: #101010;
+  --text-color: #fff;
+  --blur-color: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.title {
+  color: var(--secondary-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: var(--secondary-color);
+}
+
+.button-nav {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  border: 1.5px solid var(--secondary-color);
+  border-radius: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.button-nav:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.homepage {
+  min-height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.homepage .desc {
+  max-width: 40rem;
+}
+
+.homepage h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.homepage h1 span {
+  color: var(--secondary-color);
+}
+
+.homepage .job {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.homepage .job span {
+  color: var(--text-color);
+}
+
+.homepage .hire {
+  padding: 0.7rem 2.5rem;
+  margin-top: 1.5rem;
+  color: var(--text-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.homepage .hire:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.home-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image .circle1 {
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  transform: translate(-30%, -10%);
+  background-color: var(--secondary-color);
+  border: 5px solid var(--text-color);
+  border-radius: 50%;
+}
+
+.home-image .circle2 {
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  transform: translate(20%, 30%);
+  border: 10px solid var(--secondary-color);
+  background-color: var(--text-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+img {
+  position: relative;
+  width: 31rem;
+  height: 35rem;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  z-index: 10;
+}
+
+.aboutpage {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.aboutpage h1 {
+  font-size: 2rem;
+}
+
+.aboutpage h1 span {
+  color: var(--secondary-color);
+}
+
+.about-section {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+
+.about-section img {
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+
+.about-section .image-border {
+  position: absolute;
+  transform: translate(-5%, -75%);
+  width: 35rem;
+  height: 10rem;
+  border: 10px solid var(--secondary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 50px var(--secondary-color);
+  z-index: 1;
+}
+
+.about-section .desc-about {
+  width: 40rem;
+  font-size: 1.5em;
+}
+
+.about-section .desc-about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.service-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-section {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.service-section .card-service {
+  width: 20rem;
+  height: 28rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--black-color);
+  box-shadow: 3px 5px 10px var(--secondary-color);
+}
+
+.service-section .card-service .img-service {
+  width: 8rem;
+  height: 8rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: var(--secondary-color);
+}
+
+.service-section .card-service .img-service img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-section .card-service button {
+  padding: 0.7rem 2.5rem;
+  margin-top: 1.5rem;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border: 3px solid var(--text-color);
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-section .card-service button:hover {
+  color: var(--primary-color);
+  background-color: var(--text-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.contact-page {
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-page .form {
+  width: 80%;
+  padding: 3rem 2.5rem;
+}
+
+.contact-page .form p {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-page .form .form-contact {
+  display: flex;
+  height: 50vh;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  background-color: var(--black-color);
+  box-shadow: 3px 5px 10px var(--secondary-color);
+}
+
+.contact-page .form .form-contact input {
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  background-color: var(--black-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-page .form .form-contact .message {
+  width: 100%;
+  height: 150px;
+  color: var(--text-color);
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  background-color: var(--black-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.contact-page .form .form-contact button{
+  padding: .7rem 1rem;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  border: 3px solid var(--text-color);
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-page .form .form-contact button:hover{
+  color: var(--primary-color);
+  background-color: var(--text-color);
+  border: 1px solid var(--secondary-color);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.nav-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-footer ul li {
+  display: inline;
+}
+
+.nav-footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-footer ul li a:hover {
+  color: var(--primary-color)
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
